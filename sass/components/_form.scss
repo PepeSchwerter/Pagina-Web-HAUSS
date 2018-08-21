@@ -1,0 +1,78 @@
+.login{
+    background-image: linear-gradient(to right bottom, rgba(131, 5, 131, 0.671), rgba(77, 11, 77, 0.74)), url(https://3.bp.blogspot.com/-scCNhDfkw80/WopvqHfmpbI/AAAAAAAAqAE/kNj6xepAVpQvsuFYK3bcLCEtV0d95zBlACLcBGAs/s1600/black-panther-4k-movie-poster-vi.jpg);
+    height: 100vh;
+    padding: 4rem 0;
+}
+
+.form {
+    padding: 2rem 2rem;
+    background-image: linear-gradient(to right bottom, rgba(127, 74, 197, 0.452), rgba(161, 24, 161, 0.486)), url(http://backgroundcheckall.com/wp-content/uploads/2017/12/3d-website-background-5.jpg);
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 31px 35px 68px -38px rgba(0,0,0,0.75);
+    &--user{
+       width: 100%; 
+        background-image: linear-gradient(to right bottom, rgba(127, 74, 197, 0.452), rgba(161, 24, 161, 0.486)), url(http://backgroundcheckall.com/wp-content/uploads/2017/12/3d-website-background-5.jpg);
+    }
+    &--title{
+        font-size: 3rem;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+    &--group{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    &--input{
+        width: 100%;
+        height: 4.5rem;
+        border: none;
+        border-bottom: 1px solid gray;
+        padding: 2rem;
+        padding-left: 4.5rem;
+        color: gray;
+        &--number{
+            padding-left: 9rem;
+        }
+    }
+    &--number{
+        position: absolute;
+        top: 0.8rem;
+        left: 4.5rem;
+        z-index: 1;
+        color: gray;
+        font-size: 1.5rem;
+    }
+    &--block{
+        position: relative;
+        overflow: hidden;
+        &:first-child{
+            border-radius:10px 10px 0 0; 
+        }
+        &:last-child{
+            border-radius:0 0 10px 10px; 
+            border-bottom: none;
+        }
+    }
+    &--block--uni{
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    &--icon{
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        z-index: 1;
+        color: gray;
+        font-size: 1.5rem;
+    }
+}

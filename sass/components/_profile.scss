@@ -1,0 +1,43 @@
+.profile {
+    &--info{
+        display: flex;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: gray;
+    }
+    &--text{
+        display: flex;
+        flex-direction: column;
+    }
+    &--name{
+        font-size: 2.5rem;
+        color: rgb(75, 75, 75);
+        font-weight: 700;
+    }
+    &--img{
+        width: 150px;
+        height: 150px;
+        display: block;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 3rem;
+        border: 3px solid lightgray;
+    }
+    &--numbers-act{
+        display: inline-block;
+        padding: 1rem;
+        background-color: #2ecc71;
+        border-radius: 10px;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+        color: white;
+    }
+    &--numbers-des{
+        display: inline-block;
+        padding: 1rem;
+        color:white;
+        background-color: #e74c3c;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+}

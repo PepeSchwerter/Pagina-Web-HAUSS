@@ -1,0 +1,61 @@
+.stats {
+    display: flex; 
+    flex-wrap: wrap;
+    &--icon{
+        font-size: 7rem;
+        vertical-align: middle;
+        margin: 0 3rem;
+    }
+    &--card{
+        display: flex;
+        align-items: center;
+        width: 40%;
+        height: 160px;
+        color: white;
+        font-size: 5rem;
+        margin: 3%;
+        border-radius: 10px;
+        box-shadow: 10px 10px 47px -11px rgba(107, 107, 107, 0.75);
+        transition: all .2s;
+        &--text{
+            display: flex;
+            flex-direction: column;
+            &-des{
+                font-size: 2rem;
+            }
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+        &-blue{
+            background-color: #2980b9;
+            animation: moveInLeft .3s;
+        }
+        &-red{
+            background-color: #e74c3c;
+            animation: moveInLeft .3s .9s;
+            animation-fill-mode: backwards;
+        }
+        &-yellow{
+            background-color: #f1c40f;
+            animation: moveInLeft .3s .3s;
+            animation-fill-mode: backwards;
+        }
+        &-green{
+            background-color: #2ecc71;
+            animation: moveInLeft .3s .6s;
+            animation-fill-mode: backwards;
+        }
+        &-violet{
+            background-color: #9b59b6;
+            animation: moveInLeft .3s 1.5s;
+            animation-fill-mode: backwards;
+        }
+        &-orange{
+            background-color: #e67e22;
+            animation: moveInLeft .3s 1.2s;
+            animation-fill-mode: backwards;
+        }
+        
+    }   
+}
