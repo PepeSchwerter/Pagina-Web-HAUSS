@@ -8,21 +8,11 @@
 @import 'base/utilities';
 
 @import 'pages/home';
-@import 'pages/dashboard';
-@import 'pages/error404';
 
 @import 'components/button';
-@import 'components/icon';
-@import 'components/form';
-@import 'components/modal';
-@import 'components/table';
-@import 'components/profile';
+@import 'components/composition';
+@import 'components/feature-box';
+@import 'components/bar';
 
-@import 'layout/landing';
 @import 'layout/header';
-@import 'layout/stats';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/nav';
 @import 'layout/grid';
-
