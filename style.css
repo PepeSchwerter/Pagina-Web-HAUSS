@@ -1,0 +1,560 @@
+/* COOLORS */
+:root {
+    --base: #081d26ff;
+    --light-base: #0f3748ff;
+    --red: #de3f57ff;
+    --yellow: #f7ea78ff;
+    --blue: #6fbfe2ff;
+}
+
+/*----------------*/
+/*      BASE      */
+/*----------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 55%; 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2.3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--base);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    margin-bottom: 1.2rem;
+}
+
+p:not(:last-child){
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/*------------------*/
+/*      NAVBAR      */
+/*------------------*/
+
+header {
+    -webkit-box-shadow: 0px 5px 31px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 5px 31px -5px rgba(0,0,0,0.6);
+    box-shadow: 0px 5px 31px -5px rgba(0,0,0,0.6);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 3.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    padding-left: 6rem;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid var(--base);
+}
+
+.nav .rrss{
+    display: flex;
+    margin-left: 6rem;
+    align-items: center;
+}
+
+.nav .rrss img {
+    width: 30px;
+}
+
+.nav .rrss img:hover {
+    transform: scale(1.1);
+    transition: .2s all;
+}
+
+.menu {
+    display: none;
+    width: 35px;
+    transition: all .2s;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.menu img {
+    width: 100%;
+}
+
+/*-------------------*/
+/*      LANDING      */
+/*-------------------*/
+
+.landing {
+    height: 60vh;
+    width: 100%;
+    background-image: url("img/landing5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cta {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 2px 2px #444444;
+    color: white;
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.cta p {
+    text-align: center;
+}
+
+.cta a {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: var(--light-base);
+    
+}
+
+.cta a:hover {
+    background-color: rgb(22, 77, 100);
+}
+
+/*--------------------*/
+/*      ABOUT US      */
+/*--------------------*/
+
+.nosotros {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    position: relative;
+}
+
+.info {
+    background-color: var(--light-base);
+    color: white;
+    padding: 8rem;
+    padding-right: 18rem;
+    width: 70%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.nosotros::before {
+    position: absolute;
+    content: "";
+    background-image: url("img/img1.jpeg");
+    background-size: cover;
+    background-position: center;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    z-index: -1;
+}
+
+.business {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 0px;
+    padding: 4rem 9rem;
+}
+
+.block:not(:last-child){
+    border-right: 2px solid rgb(236, 235, 235);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.icon svg{
+    width: 40%;
+    height: 100%;
+}
+
+.mision svg {
+    fill: var(--red)
+}
+
+.vision svg {
+    fill: var(--yellow)
+}
+
+.valores ul {
+    list-style: outside;
+}
+
+.valores ul li {
+    margin-bottom: 2rem;
+}
+
+/*--------------------*/
+/*      PROYECTOS     */
+/*--------------------*/
+
+.proyectos {
+    margin: 0 auto;
+    margin-top: 8rem;
+    text-align: center;
+    max-width: 1400px;
+}
+
+.proyectos h1 {
+    margin-bottom: 5rem;
+}
+
+.casas {
+    display: flex;
+}
+
+.casa {
+    width: 33%;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.casa img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.casa:hover img {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+/*--------------------*/
+/*      CONTACTO      */
+/*--------------------*/
+
+.contacto {
+    margin-top: 8rem;
+
+    background-image:
+    linear-gradient(to bottom, rgba(20, 77, 102, 0.911), rgba(6, 22, 29, 0.911)),
+    url('img/contact.jpg');
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem;
+}
+
+.contact-box {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.formulario {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    resize: vertical;
+}
+
+input::placeholder , textarea::placeholder {
+    color: white;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+form button {
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    border: none;
+    padding: 2rem;
+    cursor: pointer;
+    color: var(--light-base);
+    background-color: white;
+    width: 50%;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid white;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.datos div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.datos div svg {
+    width: 8%;
+    fill: white;
+}
+
+footer {
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--light-base);
+}
+
+footer .me {
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .nav ul {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    header {
+        padding: 0 4rem;   
+    }
+    .landing {
+        padding: 0 4rem;   
+    }
+
+    .cta {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    
+    .nav ul {
+        display: none;
+        order: 2;
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav ul li{
+        margin: 3rem;
+        padding: 0;
+    }
+    
+    .nav ul li a {
+        padding: 2rem;
+    }
+    
+    .nav ul .selected {
+        background-color: #ffe570;
+        transition: .2s all;
+    }
+
+    .nav .rrss {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 50%; 
+    }
+
+    .logo img {
+        height: 50px;
+
+    }
+    .cta {
+        font-size: 6rem;
+    }
+
+    .info {
+        padding: 8rem;
+        width: 100%;
+        clip-path: none;
+    }
+
+    .nosotros {
+        margin-top: 0;
+    }
+
+    .nosotros::before {
+        display: none;
+    }
+
+    .business {
+        display: block;
+        margin-top: 4rem;
+    }
+
+    .block {
+        width: 100%;
+        flex: 0;
+    }
+
+    .icon svg{
+        width: 20%;
+        height: 100%;
+    }
+
+    .proyectos {
+        margin-top: 4rem;
+    }
+
+    .casas {
+        display: block;
+    }
+    .casa {
+        width: 100%;
+        padding: 4rem;
+        cursor: pointer;
+    }
+
+    .contacto {
+        margin-top: 4rem;
+    }
+
+    .contact-box {
+        display: block;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .datos {
+        margin-top: 10rem;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .datos div {
+        flex-direction: row;
+        gap: 4rem
+    }
+
+    .datos div svg {
+        width: 10%;
+    }
+
+    footer {
+        padding: 4rem;
+
+}
